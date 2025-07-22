@@ -42,7 +42,6 @@ t.fd(150)
 t.lt(45)
 
 
-print(b)
 while True:
     b=t.pos()
     
