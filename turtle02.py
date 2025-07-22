@@ -42,13 +42,13 @@ def check_collision(a,obs):
         if collision_distance <= radius + 10:
             print("충돌")
             return True
+        
+    return False
 while True:
     a=t.pos()
     check_collision(a,obs)
     t.fd(1)
 
-        
-    return False
 def distance(x1,y1,x2,y2):
     return math.sqrt((x2-x1)**2+(y2-y1)**2)
 '''
