@@ -34,10 +34,6 @@ t.rt(180)
 
 t.pendown()
 
-while True:
-    a=t.pos()
-    check_collision(a,obs)
-    t.fd(1)
 def check_collision(a,obs):
     robot_x,robot_y=a
     obs_x,obs_y=obs
@@ -46,6 +42,11 @@ def check_collision(a,obs):
         if collision_distance <= radius + 10:
             print("충돌")
             return True
+while True:
+    a=t.pos()
+    check_collision(a,obs)
+    t.fd(1)
+
         
     return False
 def distance(x1,y1,x2,y2):
