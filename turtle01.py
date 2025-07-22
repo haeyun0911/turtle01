@@ -40,7 +40,7 @@ t.fd(150)
 t.rt(90)
 t.fd(150)
 t.lt(45)
-t.fd(100)
+t.fd(200)
 #도착점 좌표
 b=t.pos()
 print(b)
