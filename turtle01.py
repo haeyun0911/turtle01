@@ -46,9 +46,9 @@ b=t.pos()
 print(b)
 
 def cal_distance(a,b):
-    a=(x1,y1)
-    b=(x2,y2)
-    #distance = math.sqrt((x2-x1)**2+(y2-y1)**2)
-    return a,b
+    x1, y1 = a
+    x2, y2 = b
+    distance = math.sqrt((x2-x1)**2+(y2-y1)**2)
+    return distance
 
 print(cal_distance(a,b))
