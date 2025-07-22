@@ -46,6 +46,7 @@ b=t.pos()
 print(b)
 if (b>=(150.00,150.00)):
     print("도착했습니다")
+    turtle.done()
     
 def cal_distance(a,b):
     x1, y1 = a
