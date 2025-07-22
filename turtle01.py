@@ -29,7 +29,8 @@ t.fd(50)
 t.lt(45)
 t.fd(200)
 #출발점 좌표
-print(a=t.pos())
+a=t.pos()
+print(a)
 t.pendown()
 
 t.rt(180)
@@ -41,7 +42,8 @@ t.fd(150)
 t.lt(45)
 t.fd(100)
 #도착점 좌표
-print(b=t.pos())
+b=t.pos()
+print(b)
 '''
 def cal_distance(a,b):
     a=(x1,y1)
