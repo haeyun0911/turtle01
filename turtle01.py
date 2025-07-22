@@ -28,8 +28,8 @@ t.rt(90)
 t.fd(50)
 t.lt(45)
 t.fd(200)
-#경로표시 일시해제
-#t.pendown()
+
+t.pendown()
 
 t.rt(180)
 t.fd(100)
