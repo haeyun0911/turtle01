@@ -10,7 +10,6 @@ t.shape("turtle")
 #장애물 중심좌표
 obs=t.pos()
 obs_x,obs_y=obs
-print(a)
 t.speed(1)
 #장애물 만들기
 t.penup()
