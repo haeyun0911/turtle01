@@ -40,15 +40,17 @@ t.fd(150)
 t.rt(90)
 t.fd(150)
 t.lt(45)
-#t.fd(200)
-#도착점 좌표
-b=t.pos()
+
+
 print(b)
-while(b<(150.00,150.00)):
-    t.fd(1)
+while True:
+    b=t.pos()
     
-    if (b>=(150.00,150.00)):
+    if b[0]>=150.00 or b[1]>=150.00:
         print("도착했습니다")
+        break
+        
+    t.fd(1)
 
     
 def cal_distance(a,b):
