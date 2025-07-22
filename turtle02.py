@@ -33,6 +33,10 @@ t.fd(200)
 t.rt(180)
 
 t.pendown()
+obstacles=[(obs[0],obs[1],71)]
+
+def distance(x1,y1,x2,y2):
+    return math.sqrt((x2-x1)**2+(y2-y1)**2)
 
 def check_collision(a,obs):
     robot_x,robot_y=a
@@ -49,8 +53,7 @@ while True:
     check_collision(a,obs)
     t.fd(1)
 
-def distance(x1,y1,x2,y2):
-    return math.sqrt((x2-x1)**2+(y2-y1)**2)
+s.mainloop()
 '''
 t.fd(100)
 t.lt(45)
