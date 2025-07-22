@@ -36,7 +36,8 @@ t.pendown()
 
 while True:
     a=t.pos()
-    
+    check_collision(a,obs)
+    t.fd(1)
 def check_collision(a,obs):
     robot_x,robot_y=a
     obs_x,obs_y=obs
@@ -49,10 +50,11 @@ def check_collision(a,obs):
     return False
 def distance(x1,y1,x2,y2):
     return math.sqrt((x2-x1)**2+(y2-y1)**2)
-
+'''
 t.fd(100)
 t.lt(45)
 t.fd(150)
 t.rt(90)
 t.fd(150)
 t.lt(45)
+'''
