@@ -40,13 +40,16 @@ t.fd(150)
 t.rt(90)
 t.fd(150)
 t.lt(45)
-t.fd(200)
+#t.fd(200)
 #도착점 좌표
 b=t.pos()
 print(b)
 if (b>=(150.00,150.00)):
     print("도착했습니다")
     turtle.done()
+    
+else:
+    t.fd(200)
     
 def cal_distance(a,b):
     x1, y1 = a
