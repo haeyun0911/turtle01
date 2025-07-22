@@ -44,7 +44,9 @@ t.fd(100)
 #도착점 좌표
 b=t.pos()
 print(b)
-
+if (b>=(150,150)):
+    print("도착했습니다")
+    
 def cal_distance(a,b):
     x1, y1 = a
     x2, y2 = b
