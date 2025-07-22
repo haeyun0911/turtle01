@@ -7,8 +7,7 @@ s=turtle.getscreen()
 t=turtle.Turtle()
 
 t.shape("turtle")
-print(t.turtlesize())
-'''
+
 t.speed(1)
 #장애물 만들기
 t.penup()
@@ -61,4 +60,4 @@ def cal_distance(a,b):
     return distance
 
 print(cal_distance(a,b))
-'''
+
